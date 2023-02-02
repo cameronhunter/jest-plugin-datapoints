@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node-lts-strictest",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build"
+  }
+}
