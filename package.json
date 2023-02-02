@@ -1,0 +1,8 @@
+{
+  "name": "jest-plugin-datapoints",
+  "version": "0.0.0",
+  "description": "Create test cases from the cartesian product of data points",
+  "main": "build/index.js",
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "MIT"
+}
