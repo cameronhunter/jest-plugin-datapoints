@@ -16,6 +16,12 @@ const suite = test.datapoints({
 suite(({ a, b }) => {
   expect(a && b).toMatchSnapshot();
 });
+
+// Test suites can also have titles which use the `$<field>` syntax to use
+// data point values in the name.
+suite('a: $a, b: $b', ({ a, b }) => {
+  expect(a && b).toMatchSnapshot();
+});
 ```
 
 The above example will create four test cases (the cartesian product of the
