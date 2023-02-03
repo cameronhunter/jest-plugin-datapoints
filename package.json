@@ -34,5 +34,15 @@
     "setupFilesAfterEnv": [
       "./src/index.ts"
     ]
+  },
+  "keywords": [
+    "jest",
+    "datapoints",
+    "testing"
+  ],
+  "homepage": "https://github.com/cameronhunter/jest-plugin-datapoints",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cameronhunter/jest-plugin-datapoints.git"
   }
 }
