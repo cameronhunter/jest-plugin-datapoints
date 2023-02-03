@@ -151,3 +151,14 @@ describe('Using global variable', () => {
     });
   });
 });
+
+describe('snapshot', () => {
+  const suite = test.datapoints({
+    a: [true, false],
+    b: [true, false]
+  });
+
+  suite(({ a, b }) => {
+    expect(a && b).toMatchSnapshot();
+  });
+});

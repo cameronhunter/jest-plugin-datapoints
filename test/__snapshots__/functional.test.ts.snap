@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot {"a":false,"b":false} 1`] = `false`;
+
+exports[`snapshot {"a":false,"b":true} 1`] = `false`;
+
+exports[`snapshot {"a":true,"b":false} 1`] = `false`;
+
+exports[`snapshot {"a":true,"b":true} 1`] = `true`;

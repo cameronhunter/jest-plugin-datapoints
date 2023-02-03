@@ -33,22 +33,17 @@ test('it creates a test suite from the datapoints', () => {
 
 test('it creates a table of test cases from the datapoints', () => {
   const table = createTable({
-    one: [1, 2, 3],
-    two: ['a', 'b', 'c']
+    a: [true, false],
+    b: [true, false]
   });
 
   expect(stringify(table)).toMatchInlineSnapshot(`
 "
-testcaseIndex|one|two|_
-1|1|a|{"one":1,"two":"a"}
-2|1|b|{"one":1,"two":"b"}
-3|1|c|{"one":1,"two":"c"}
-4|2|a|{"one":2,"two":"a"}
-5|2|b|{"one":2,"two":"b"}
-6|2|c|{"one":2,"two":"c"}
-7|3|a|{"one":3,"two":"a"}
-8|3|b|{"one":3,"two":"b"}
-9|3|c|{"one":3,"two":"c"}
+testcaseIndex|a|b|_
+1|true|true|{"a":true,"b":true}
+2|true|false|{"a":true,"b":false}
+3|false|true|{"a":false,"b":true}
+4|false|false|{"a":false,"b":false}
 "
 `);
 });
