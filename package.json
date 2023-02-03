@@ -15,12 +15,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@jest/types": "^29.4.1",
     "cartesian-product": "^2.1.2",
     "jest-each-table": "^2.0.0"
   },
   "peerDependencies": {
-    "@jest/globals": "*"
+    "@jest/globals": "*",
+    "@jest/types": "*"
   },
   "devDependencies": {
     "@tsconfig/node-lts-strictest": "^18.12.1",
